@@ -1,0 +1,70 @@
+.app{
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  padding-top: 5vh;
+
+  p{
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    margin-bottom: 2em;
+  }
+}
+
+.app .control{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5em;
+
+  & > button{
+    margin: 0 1em;
+    font-size: 1em;
+    color: aliceblue;
+    padding: 0.5em 1em;
+    background: #4CAF50;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.25s ease;
+
+    &:hover{box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);}
+    &:disabled{
+      box-shadow: none;
+      background: #2c273d;
+    }
+  }
+}
+
+.app .statistics{
+  width: 100%;
+  padding: 1em;
+
+  & > table{
+    width: 100%;
+
+    th, td{
+      text-align: left;
+      min-width: 170px;
+      max-width: 300px;
+      padding:  0.5em;
+    }
+
+    th{color: rgba(255, 255, 255, 0.7); padding-bottom: 1em;}
+
+    td{
+      border: 1px solid #000;
+      transition: all 0.25s ease;
+      color: #fff;
+      margin: 0 0.5em;
+
+      &:hover{background: #373343;}
+    }
+
+    td:active{
+      background: yellow;
+      color: #373343;
+    }
+  }
+}
